@@ -1,10 +1,13 @@
 {
   "name": "react-boilerplate",
+  "homepage": "https://chandankr2727.github.io/Import-Export-React---Contest-05-11-23---rg46827lezjp.git",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --mode development --watch --open --hot",
     "build": "webpack --mode production"
   },
@@ -12,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "css-loader": "^4.3.0",
+    "css-loader": "^6.8.1",
     "jest-junit": "^11.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -36,18 +39,19 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@testing-library/react": "^11.0.4",
-    "babel-core": "^6.26.3",
+    "babel-core": "^4.7.16",
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.5.0",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^4.5.0",
     "jest": "^26.4.2",
     "react-test-renderer": "^16.13.1",
-    "webpack": "^4.44.2",
-    "webpack-dev-server": "^3.11.0",
+    "webpack": "^5.89.0",
+    "webpack-dev-server": "^4.15.1",
     "xml-js": "^1.6.11"
   }
 }
